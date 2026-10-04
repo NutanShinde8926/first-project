@@ -8,78 +8,79 @@
 
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+  margin: 0;                  /* removes the white gap the browser adds around the page */
+  font-family: Arial, sans-serif;   /* the font; sans-serif is the backup */
+  background: #0f172a;        /* dark navy background for the whole page */
+  color: white;               /* default text colour (inherited by everything inside) */
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 15px 30px;
-  background: #1e293b;
+  display: flex;              /* puts the title and links in one row */
+  align-items: center;        /* lines them up vertically in the middle */
+  gap: 20px;                  /* space between the items */
+  padding: 15px 30px;         /* 15px top/bottom, 30px left/right inside the bar */
+  background: #1e293b;        /* slightly lighter bar than the page */
 }
 
-nav h1 {
-  margin: 0 auto 0 0;
+nav h1 {                      /* only the h1 that is inside nav */
+  margin: 0 auto 0 0;         /* top right bottom left: the "auto" on the right pushes
+                                 the links to the far right side */
   font-size: 24px;
 }
 
 a {
-  color: #38bdf8;
-  text-decoration: none;
+  color: #38bdf8;             /* light blue links */
+  text-decoration: none;      /* removes the underline */
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* underline appears only when the mouse is over the link */
 }
 
-.page {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 0 20px;
+.page {                       /* the dot means a class, used by className="page" */
+  max-width: 600px;           /* content never gets wider than 600px */
+  margin: 40px auto;          /* 40px above and below; auto left/right centres the box */
+  padding: 0 20px;            /* 0 top/bottom, 20px left/right so text doesn't touch the edges */
 }
 
 input {
   padding: 8px;
   width: 60%;
   border: none;
-  border-radius: 5px;
+  border-radius: 5px;         /* rounded corners */
 }
 
 button {
   padding: 8px 14px;
-  margin-left: 8px;
+  margin-left: 8px;           /* gap between the input and the button */
   border: none;
   border-radius: 5px;
   background: #38bdf8;
-  cursor: pointer;
+  cursor: pointer;            /* hand cursor when hovering */
 }
 
 ul {
-  list-style: none;
-  padding: 0;
+  list-style: none;           /* removes the bullet dots */
+  padding: 0;                 /* removes the default left indent */
 }
 
 li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
+  display: flex;              /* text on the left, button on the right */
+  justify-content: space-between;  /* pushes them to opposite ends */
+  align-items: center;        /* centres them vertically */
+  margin-top: 10px;           /* space between the list items */
   padding: 10px 14px;
-  background: #1e293b;
+  background: #1e293b;        /* each task becomes a card */
   border-radius: 6px;
 }
 
-li span {
-  cursor: pointer;
+li span {                     /* only a span inside an li */
+  cursor: pointer;            /* shows it's clickable */
 }
 
 .done {
-  text-decoration: line-through;
-  color: #94a3b8;
+  text-decoration: line-through;  /* line through the finished task */
+  color: #94a3b8;                 /* greyed-out text */
 }
 
 .footer {
