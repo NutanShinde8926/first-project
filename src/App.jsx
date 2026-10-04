@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
+import Task from "./pages/Task";
+import About from "./pages/About";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,8 @@ function App() {
           <Route path='login' element={<Login />} />
           <Route path='register' element={<Register />} />
           <Route path='cart' element={<Cart />} />
+          <Route path="task" element={<Task />} />
+         <Route path="about" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>
